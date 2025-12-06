@@ -7,6 +7,9 @@ body {
     text-align: center;
     background: linear-gradient(to bottom, #e8f7fc, #fdfcfa);
     color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header Styling */
@@ -58,22 +61,123 @@ section {
 
 section#about {
     background: #f0f9ff;
-    font-size: 1.2rem; /* Increased font size */
-    line-height: 1.8; /* Adjusted line height for readability */
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+section#experience {
+    background: #f0f9ff;
+    font-size: 1.2rem;
+    line-height: 1.8;
 }
 
 section#projects {
-    background: #ffefef;
+    background: #f0f9ff;
 }
 
 section#contact {
-    background: #eafff3;
+    background: #f0f9ff;
+}
+
+/* Experience Card Styling */
+.experience-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 900px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(106, 17, 203, 0.2);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.experience-title h3 {
+    color: #6a11cb;
+    font-size: 1.6rem;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.job-title {
+    color: #555;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.experience-period {
+    text-align: right;
+}
+
+.experience-period p {
+    margin: 0.25rem 0;
+    color: #666;
+    font-size: 1rem;
+}
+
+.location {
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #888;
+}
+
+.tech-stack {
+    color: #444;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e8f4ff 100%);
+    border-left: 4px solid #2575fc;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.tech-stack strong {
+    color: #6a11cb;
+}
+
+.experience-details {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.experience-details li {
+    padding-left: 1.75rem;
+    margin-bottom: 0.85rem;
+    position: relative;
+    color: #555;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.experience-details li:before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #2575fc;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 /* Education Section Styling */
 section#education {
-    background: #fdf4e3;
-    font-size: 1.2rem; /* Increased font size */
+    background: #f0f9ff;
+    font-size: 1.2rem;
     line-height: 1.8;
     padding: 2rem;
 }
@@ -84,13 +188,13 @@ section#education {
 }
 
 .education-item h3 {
-    font-size: 1.8rem; /* Increased heading font size */
+    font-size: 1.8rem;
     color: #333;
     margin-bottom: 0.5rem;
 }
 
 .education-item p {
-    font-size: 1.2rem; /* Increased paragraph font size */
+    font-size: 1.2rem;
     margin: 0.2rem 0;
 }
 
@@ -106,24 +210,26 @@ section#education {
 
 /* LeetCode Section Styling */
 #leetcode {
+    background: #f0f9ff;
     text-align: center;
     margin: 2rem 0;
-  }
-  
-  #leetcode h2 {
+    padding: 2rem 1rem;
+}
+
+#leetcode h2 {
     margin-bottom: 1rem;
-  }
-  
-  #leetcode #rating-display {
+}
+
+#leetcode #rating-display {
     font-size: 1.25rem;
     margin: 0.5rem 0;
-  }
-  
-  #leetcode #rating-display strong {
+}
+
+#leetcode #rating-display strong {
     color: #FFA116;
-  }
-  
-  .leetcode-link {
+}
+
+.leetcode-link {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
@@ -133,29 +239,27 @@ section#education {
     border-radius: 8px;
     font-weight: bold;
     transition: transform 0.2s, box-shadow 0.2s;
-  }
-  
-  .leetcode-link:hover {
+}
+
+.leetcode-link:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .leetcode-link img {
+}
+
+.leetcode-link img {
     width: 32px;
     height: 32px;
     margin-right: 10px;
-  }
-  
+}
 
 /* Footer Styling */
 footer {
     background: linear-gradient(90deg, #2575fc, #6a11cb);
     color: white;
     padding: 1rem 0;
-    position: relative;
-    bottom: 0;
     width: 100%;
     text-align: center;
+    margin-top: auto;
 }
 
 footer p {
@@ -193,4 +297,68 @@ button:hover {
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.github-link {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.github-link:hover {
+    background-color: #6a11cb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0.5rem 0;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .experience-header {
+        flex-direction: column;
+    }
+
+    .experience-period {
+        text-align: left;
+        margin-top: 0.5rem;
+    }
+
+    .experience-title h3 {
+        font-size: 1.4rem;
+    }
+
+    .experience-card {
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    .experience-details li {
+        font-size: 1rem;
+    }
+}
+
+.section-box {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+    width: 90%;
+    max-width: 1200px;
 }

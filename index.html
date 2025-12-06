@@ -11,13 +11,14 @@
   <!-- Header -->
   <header data-aos="fade-down">
     <h1>Saurabh Damle</h1>
-    <p>Software Developer | Data Scientist</p>
+    <p>Full Stack Software Developer</p>
   </header>
 
   <!-- Navigation Bar -->
   <nav>
     <ul>
       <li><a href="#about">About</a></li>
+      <li><a href="#experience">Work Experience</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -25,93 +26,162 @@
   </nav>
 
   <!-- About Section -->
-  <section id="about" data-aos="fade-up">
-    <h2>About Me</h2>
-    <p>
-        Highly motivated and results-oriented Data Scientist with a strong foundation in software engineering. Proven ability to
-        leverage data science and machine learning techniques to solve complex business problems and drive impactful outcomes.
-        Expertise in developing and deploying scalable, high-performance solutions using a variety of technologies including Python,
-        Java, AWS, and cloud-native architectures. Eager to contribute to innovative projects and collaborate with cross-functional
-        teams to deliver exceptional results.
-    </p>
-  </section>
+  <div class="section-box">
+    <section id="about" data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>
+          Highly motivated and results-driven Software Developer with 3+ years of professional experience building scalable, high-performance applications. Proficient in designing full-stack solutions, developing REST APIs, and optimizing cloud-native architectures using technologies such as Java, Python, Node.js, React, AWS, and Kubernetes. Experienced in delivering secure, efficient, and maintainable software, with a proven track record of improving system performance, reducing latency, and supporting high-concurrency environments. Passionate about solving complex engineering problems and contributing to innovative projects in collaborative team settings.
+      </p>
+    </section>
+  </div>
 
+
+  <!-- Work exp Section -->
+  <div class="section-box">
+    <section id="experience" data-aos="fade-up">
+      <h2>Work Experience</h2>
+      
+      <div class="experience-card" data-aos="zoom-in">
+        <div class="experience-header">
+          <div class="experience-title">
+            <h3>Ithena</h3>
+            <p class="job-title">Full-Stack Software Developer</p>
+          </div>
+          <div class="experience-period">
+            <p>July 2025 - Present</p>
+            <p class="location">Richmond, VA</p>
+          </div>
+        </div>
+        <p class="tech-stack"><strong>Tech Stack:</strong> React, Python, AWS, PostgreSQL, MongoDB, Git</p>
+        <ul class="experience-details">
+          <li>Designed a full stack web application for creating dashboards and generating insights on users' files or databases.</li>
+          <li>Architected the backend using Python and Chroma-DB for vector embedding storage and retrieval enabling 1 Million concurrent conversations.</li>
+          <li>Enhanced the User Interface for the chat application using material UI and message streaming which reduced the render time by 15%.</li>
+          <li>Implemented secure user authentication with Auth0 and added per-user API rate limiting, protecting the platform from abuse while ensuring consistent performance under high traffic.</li>
+        </ul>
+      </div>
+
+      <div class="experience-card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="experience-header">
+          <div class="experience-title">
+            <h3>Innomountain Inc.</h3>
+            <p class="job-title">Software Developer</p>
+          </div>
+          <div class="experience-period">
+            <p>May 2024 - June 2025</p>
+            <p class="location">Remote (Boston, MA)</p>
+          </div>
+        </div>
+        <p class="tech-stack"><strong>Tech Stack:</strong> NodeJS, AWS, DynamoDB, Apache Kafka, Git</p>
+        <ul class="experience-details">
+          <li>Designed and implemented a low-latency backend using ExpressJS for a parking lot management system.</li>
+          <li>Engineered scalable parking slot booking APIs in Express.js using row-level transactional locks, enabling safe concurrent reservations and supporting peak traffic of 10000+ req/sec.</li>
+          <li>Automated cloud infrastructure deployment using AWS CloudFormation and EKS for scalable, repeatable, and production-grade deployments.</li>
+          <li>Reduced database query latency by 30% through indexing and query optimization techniques.</li>
+        </ul>
+      </div>
+
+      <div class="experience-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="experience-header">
+          <div class="experience-title">
+            <h3>Tata Consultancy Services</h3>
+            <p class="job-title">Software Engineer</p>
+          </div>
+          <div class="experience-period">
+            <p>Apr 2021 - Jul 2022</p>
+            <p class="location">Pune</p>
+          </div>
+        </div>
+        <p class="tech-stack"><strong>Tech Stack:</strong> Java11, Jenkins, Kubernetes, MongoDB, Git</p>
+        <ul class="experience-details">
+          <li>Developed a backend REST API using Spring Boot and Java11 for Citibank's Institutional Clients Group (ICG), reducing latency by 21% and improving transaction processing time.</li>
+          <li>Streamlined deployment processes by automating CI/CD pipelines using Jenkins and uDeploy, leading to a 40% reduction in manual effort and deployment errors.</li>
+          <li>Orchestrated containerized deployments using Kubernetes, ensuring high availability and scalability across production environments.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
   <!-- Education-->
 
-  <section id="education" data-aos="fade-up">
-    <h2>Education</h2>
-    <div class="education-item">
-      <img src="images/indiana-university-logo.jpg" alt="Indiana University Logo" class="edu-logo">
-      <h3>Indiana University</h3>
-      <p>Master of Science in Data Science</p>
-      <p> GPA: 3.6/4.0</p>
-      <p>Graduation: May 2024</p>
-    </div>
-    <div class="education-item">
-      <img src="images/pune-university-logo.jpg" alt="Pune University Logo" class="edu-logo">
-      <h3>Savitribai Phule Pune University</h3>
-      <p>Bachelor of Engineering in Electrical and Computer Engineering</p>
-      <p>GPA: 3.9/4.0</p>
-      <p>Graduation: November 2020</p>
-    </div>
-  </section>
+  <div class="section-box">
+    <section id="education" data-aos="fade-up">
+      <h2>Education</h2>
+      <div class="education-item">
+        <img src="images/indiana-university-logo.jpg" alt="Indiana University Logo" class="edu-logo">
+        <h3>Indiana University</h3>
+        <p>Master of Science in Data Science</p>
+        <p> GPA: 3.6/4.0</p>
+        <p>Graduation: May 2024</p>
+      </div>
+      <div class="education-item">
+        <img src="images/pune-university-logo.jpg" alt="Pune University Logo" class="edu-logo">
+        <h3>Savitribai Phule Pune University</h3>
+        <p>Bachelor of Engineering in Electrical and Computer Engineering</p>
+        <p>GPA: 3.9/4.0</p>
+        <p>Graduation: November 2020</p>
+      </div>
+    </section>
+  </div>
   
   
 
   <!-- Projects Section -->
-  <section id="projects">
-    <h2 data-aos="fade-up">Projects</h2>
-    <div class="project-card" data-aos="zoom-in">
-      <h3>Regional Inventors Impact Analysis</h3>
-      <p>
-        Patent classification using AI models and trend analysis with BART and Girvan-Newman algorithms.
-      </p>
-      <a href="https://github.com/saurabhdamle11/patent_classification" target="_blank" class="github-link">View on GitHub</a>
-    </div>
-    <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
-      <h3>Utilities Disconnection Dashboard</h3>
-      <p>
-        Interactive dashboard to visualize utility disconnections, featuring automated ETL processes and reduced visualization loading time.
-      </p>
-      <a href="https://github.com/saurabhdamle11/Utilities-Disconnection-Dashboard" target="_blank" class="github-link">View on GitHub</a>
-    </div>
-  </section>
+  <div class="section-box">
+    <section id="projects">
+      <h2 data-aos="fade-up">Projects</h2>
+      <div class="project-card" data-aos="zoom-in">
+        <h3>Regional Inventors Impact Analysis</h3>
+        <p>
+          Patent classification using AI models and trend analysis with BART and Girvan-Newman algorithms.
+        </p>
+        <a href="https://github.com/saurabhdamle11/patent_classification" target="_blank" class="github-link">View on GitHub</a>
+      </div>
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Utilities Disconnection Dashboard</h3>
+        <p>
+          Interactive dashboard to visualize utility disconnections, featuring automated ETL processes and reduced visualization loading time.
+        </p>
+        <a href="https://github.com/saurabhdamle11/Utilities-Disconnection-Dashboard" target="_blank" class="github-link">View on GitHub</a>
+      </div>
+    </section>
+  </div>
 
-  <section id="leetcode" data-aos="fade-up" style="text-align: center; margin: 2rem 0;">
-    <h2 style="margin-bottom: 1rem;">LeetCode Rating</h2>
-    <p id="rating-display" style="font-size: 1.25rem; margin: 0.5rem 0;">
-      <strong style="color: #FFA116;">1704</strong> (Top <strong style="color: #FFA116;">12.64%</strong>)
-    </p>
-    <a href="https://leetcode.com/saurabhdamle11" target="_blank" class="leetcode-link" 
-       style="display: inline-flex; align-items: center; text-decoration: none; background-color: #FFA116; color: white; 
-              padding: 0.5rem 1rem; border-radius: 8px; font-weight: bold; transition: transform 0.2s, box-shadow 0.2s;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" 
-           alt="LeetCode Logo" style="width: 32px; height: 32px; margin-right: 10px;">
-      View My LeetCode Profile
-    </a>
-  </section>
+  <div class="section-box">
+    <section id="leetcode" data-aos="fade-up" style="text-align: center; margin: 0rem 0;">
+      <h2 style="margin-bottom: 1rem;">LeetCode Rating</h2>
+      <p id="rating-display" style="font-size: 1.25rem; margin: 0.5rem 0;">
+        <strong style="color: #FFA116;">1704</strong> (Top <strong style="color: #FFA116;">12.64%</strong>)
+      </p>
+      <a href="https://leetcode.com/saurabhdamle11" target="_blank" class="leetcode-link" 
+         style="display: inline-flex; align-items: center; text-decoration: none; background-color: #FFA116; color: white; 
+                padding: 0.5rem 1rem; border-radius: 8px; font-weight: bold; transition: transform 0.2s, box-shadow 0.2s;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" 
+             alt="LeetCode Logo" style="width: 32px; height: 32px; margin-right: 10px;">
+        View My LeetCode Profile
+      </a>
+    </section>
+  </div>
   
 
   <!-- Contact Section -->
+  <div class="section-box">
   <section id="contact" data-aos="fade-up">
     <h2>Contact Me</h2>
     <p>Email: <a href="mailto:saurabhdamle8@gmail.com">saurabhdamle8@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/saurabh-damle-2129a8b9">Saurabh Damle</a></p>
     <p>GitHub: <a href="https://github.com/saurabhdamle11">saurabhdamle11</a></p>
   </section>
+</div>
+
 
   <!-- Footer -->
-  <footer data-aos="fade-up">
+  <footer>
     <p>© 2025 Saurabh Damle | Built with ❤️</p>
   </footer>
 
-  <!-- AOS Animation Library -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1200, 
-    });
-  </script>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
-
