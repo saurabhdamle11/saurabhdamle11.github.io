@@ -270,8 +270,8 @@
         <div class="leetcode-content">
           <h2>LeetCode Rating</h2>
           <div class="rating-display">
-            <span class="rating-number">1741</span>
-            <span class="rating-percentile">Top 10.4%</span>
+            <span class="rating-number">1785</span>
+            <span class="rating-percentile">Top 8.3%</span>
           </div>
           <p class="rating-subtitle">Active competitive programmer solving algorithmic challenges</p>
           <a href="https://leetcode.com/saurabhdamle11" target="_blank" class="btn btn-leetcode">
@@ -332,11 +332,11 @@
   </section>
 
   <footer class="footer">
-    <div class="container">
-      <p>Designed & Built by Saurabh Damle</p>
-      <p class="footer-year">2026</p>
-    </div>
-  </footer>
+  <div class="container">
+    <p>Designed & Built by Saurabh Damle</p>
+    <p class="footer-year" id="year"></p>
+  </div>
+</footer>
 
   <script>
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -366,6 +366,10 @@
       
       lastScroll = currentScroll;
     });
+  </script>
+
+  <script>
+  document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
