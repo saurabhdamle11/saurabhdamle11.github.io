@@ -63,7 +63,7 @@ body {
   margin: 0 auto;
   padding: 1rem 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -130,7 +130,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
+  background: white;
   position: relative;
   overflow: hidden;
   padding-top: 80px;
@@ -257,7 +257,7 @@ body {
 }
 
 .about-section {
-  background: var(--bg-primary);
+  padding-top: 0;
 }
 
 .about-content p {
@@ -291,7 +291,6 @@ body {
 }
 
 .tag {
-  background: var(--bg-tertiary);
   color: var(--text-primary);
   padding: 0.5rem 1rem;
   border-radius: 6px;
@@ -307,7 +306,7 @@ body {
 }
 
 .experience-section {
-  background: var(--bg-secondary);
+  padding-top: 0;
 }
 
 .timeline {
@@ -346,7 +345,6 @@ body {
 }
 
 .timeline-content {
-  background: white;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: var(--shadow-md);
@@ -406,7 +404,6 @@ body {
 }
 
 .tech-tag {
-  background: var(--bg-secondary);
   color: var(--primary-color);
   padding: 0.375rem 0.875rem;
   border-radius: 5px;
@@ -438,7 +435,7 @@ body {
 }
 
 .education-section {
-  background: var(--bg-primary);
+  padding-top: 0;
 }
 
 .education-grid {
@@ -450,7 +447,6 @@ body {
 }
 
 .education-card {
-  background: white;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: var(--shadow-md);
@@ -508,7 +504,7 @@ body {
 }
 
 .projects-section {
-  background: var(--bg-secondary);
+  padding-top: 0;
 }
 
 .projects-grid {
@@ -520,7 +516,6 @@ body {
 }
 
 .project-card {
-  background: white;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: var(--shadow-md);
@@ -578,12 +573,10 @@ body {
 }
 
 .leetcode-section {
-  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
   padding: 4rem 0;
 }
 
 .leetcode-card {
-  background: white;
   border-radius: 16px;
   padding: 3rem;
   max-width: 600px;
@@ -621,7 +614,6 @@ body {
   font-size: 1.5rem;
   color: var(--text-primary);
   font-weight: 600;
-  background: var(--bg-secondary);
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
 }
@@ -653,7 +645,7 @@ body {
 }
 
 .contact-section {
-  background: var(--bg-primary);
+  padding-top: 0;
 }
 
 .contact-subtitle {
@@ -674,7 +666,6 @@ body {
 }
 
 .contact-card {
-  background: white;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: var(--shadow-md);
@@ -695,7 +686,6 @@ body {
 .contact-icon {
   width: 60px;
   height: 60px;
-  background: var(--bg-secondary);
   border-radius: 12px;
   display: flex;
   align-items: center;
